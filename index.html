@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        
+    <div class="navbar">
+        <nav>
+            <a href="index.html"><h1 class="logo">Taste Tales</h1></a>
+            <ul>
+                <li><a href="list.html">All posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="index-main">
+
+        <div class="main-header">
+            <h2>Latest Recipes</h2>
+        </div>
+
+        <section class="latest-section">
+            
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="images/left.svg" alt="Carousel left button">
+                </button>
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <a id="carousel__link" href="blog.html"><img id="carousel__image" src="" alt=""></a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a id="carousel__link2" href="blog.html"><img id="carousel__image2" src="" alt=""></a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a id="carousel__link3" href="blog.html"><img id="carousel__image3" src="" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__button carousel__button--right">
+                    <img src="images/right.svg" alt="Carousel right button">
+                </button>
+
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="welcome-section full-bleed">
+            <h3>Welcome to Taste Tales</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Sed, explicabo iste cupiditate, 
+                veritatis possimus obcaecati, 
+                ex a quod beatae saepe veniam modi consequuntur 
+                dolores earum quam architecto totam praesentium eum.
+            </p>
+        </section>
+
+        <section class="popular-section">
+
+            <div class="main-header">
+                <h2>Popular Recipes</h2>
+            </div>
+
+            <section class="list-section">
+
+                <div class="box-container" id="recipe_1">
+                    <div class="box-container__image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="box-container__content">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="blog.html" class="box-container__button">read more</a>
+                        <div class="box-container__info">
+                            <span><i class="date"> July 3rd, 2023 </i></span>
+                            <span><i class="author"> by User </i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container" id="recipe_2">
+                    <div class="box-container__image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="box-container__content">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="box-container__button">read more</a>
+                        <div class="box-container__info">
+                            <span><i class="date"> July 3rd, 2023 </i></span>
+                            <span><i class="author"> by User </i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container" id="recipe_3">
+                    <div class="box-container__image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="box-container__content">
+                        <h3></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="box-container__button">read more</a>
+                        <div class="box-container__info">
+                            <span><i class="date"> July 3rd, 2023 </i></span>
+                            <span><i class="author"> by User </i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="list.html">All posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
+
+        
+
+    <script src="js/carousel.js" type="module"></script>
+</body>
+</html>

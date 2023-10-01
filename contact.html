@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><h1 class="logo">Taste Tales</h1></a>
+                <ul>
+                    <li><a href="list.html">All posts</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <div class="contact-container">
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <h1>Contact Us</h1>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+                <small class="error"></small>
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" placeholder="Your email address">
+                <small class="error"></small>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Subject of your message">
+                <small class="error"></small>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Write your message" rows="6"></textarea>
+                <small class="error"></small>
+
+                <div class="contact-container__button">
+                    <input type="submit" value="Send Message">
+                    <p id="success"></p>
+                </div>
+
+            </form>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="list.html">All posts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+
+        <script src="js/contact.js"></script>
+    </body>
+</html>
