@@ -7,6 +7,7 @@ try {
         throw new Error("Not found")
     let recipe = await response.json()
 
+    document.getElementById("recipe-title0").innerText = recipe.name
     document.getElementById("recipe-title").innerText = recipe.name
 
     const recipeImg = document.getElementById("recipe-image")

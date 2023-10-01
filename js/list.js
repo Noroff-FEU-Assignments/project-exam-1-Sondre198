@@ -13,7 +13,7 @@ for (const recipe of recipes){
         <div class="box-container__content">
             <h3>${recipe.name}</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="blog.html?recipeId=${recipe.id}" class="box-container__button">read more</a>
+            <a href="blog.html?recipeId=${recipe.id}" class="box-container__button">Get Recipe</a>
             <div class="box-container__info">
                 <span><i class="date"> July 3rd, 2023 </i></span>
                 <span><i class="author"> by User </i></span>
