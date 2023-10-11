@@ -1,6 +1,6 @@
 # Taste Tales
 
-![image]()
+![image](images/project-exam1.png)
 
 This is the food blog Taste Tales where users can visit to find a variety of recipes.
 
