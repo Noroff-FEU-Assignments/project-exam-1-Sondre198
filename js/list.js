@@ -8,10 +8,10 @@ for (const recipe of recipes){
     html += `
     <div class="box-container">
         <div class="box-container__image">
-            <img src="${recipe.rendered}" alt="${recipe.alt}">
+            <img src="${recipe.content}" alt="${recipe.alt}">
         </div>
         <div class="box-container__content">
-            <h3>${recipe.name}</h3>
+            <h3>${recipe.title}</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="blog.html?recipeId=${recipe.id}" class="box-container__button">Get Recipe</a>
             <div class="box-container__info">
