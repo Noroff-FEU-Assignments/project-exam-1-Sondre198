@@ -1,5 +1,5 @@
 import { api } from "./keys.js"
-let response = await fetch(api + "/products?per_page=100&")
+let response = await fetch(api + "/posts?per_page=100&")
 let recipes = await response.json()
 
 let html = ""
@@ -8,7 +8,7 @@ for (const recipe of recipes){
     html += `
     <div class="box-container">
         <div class="box-container__image">
-            <img src="${recipe.images[1].src}" alt="${recipe.alt}">
+            <img src="${recipe.rendered.src}" alt="${recipe.alt}">
         </div>
         <div class="box-container__content">
             <h3>${recipe.name}</h3>
