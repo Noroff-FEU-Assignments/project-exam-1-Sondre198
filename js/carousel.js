@@ -1,4 +1,4 @@
-import { api, keys } from "./keys.js"
+import { api } from "./keys.js"
 let recipes = await fetch(api + "/posts?").then(r=>r.json())
 
 let featuredRecipes = await fetch(api + "/posts?tags&").then(r => r.json())
