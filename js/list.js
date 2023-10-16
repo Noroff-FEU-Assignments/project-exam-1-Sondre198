@@ -8,7 +8,7 @@ for (const recipe of recipes){
     html += `
     <div class="box-container">
         <div class="box-container__image">
-            <img src="${recipe.images[0].src}" alt="${recipe.alt}">
+            <img src="${recipe.images[1].src}" alt="${recipe.alt}">
         </div>
         <div class="box-container__content">
             <h3>${recipe.name}</h3>
