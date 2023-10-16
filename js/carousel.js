@@ -5,7 +5,7 @@ let latestRecipes1 = recipes[1]
 let latestRecipes2 = recipes[2]
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = latestRecipes0.content.rendered;
+latestRecipeImg.src = latestRecipes0.content;
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
