@@ -1,13 +1,11 @@
 import { api } from "./keys.js"
 let recipes = await fetch(api + "/posts?per_page=100&").then(r=>r.json())
-
-let featuredRecipes = await fetch(api + "/posts?per_page=100&").then(r => r.json())
-let latestRecipes0 = featuredRecipes[0]
-let latestRecipes1 = featuredRecipes[1]
-let latestRecipes2 = featuredRecipes[2]
+let latestRecipes0 = recipes[0]
+let latestRecipes1 = recipes[1]
+let latestRecipes2 = recipes[2]
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = recipes.content.rendered;
+latestRecipeImg.src = latestRecipes0.content.rendered;
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
