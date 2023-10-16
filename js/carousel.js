@@ -1,7 +1,7 @@
 import { api } from "./keys.js"
 let recipes = await fetch(api + "/posts?").then(r=>r.json())
 
-let featuredRecipes = await fetch(api + "/posts?tags=tag_id_2").then(r => r.json())
+let featuredRecipes = await fetch(api + "/posts?tags=tag_id_1,tag_id_2").then(r => r.json())
 let latestRecipes0 = featuredRecipes[0]
 let latestRecipes1 = featuredRecipes[1]
 let latestRecipes2 = featuredRecipes[2]
