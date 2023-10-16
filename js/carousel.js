@@ -8,17 +8,17 @@ let latestRecipes2 = featuredRecipes[2]
 
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = latestRecipes0.images[0].src;
+latestRecipeImg.src = latestRecipes0.content.rendered;
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
 const latestRecipeImg1 = document.getElementById("carousel__image2")
-latestRecipeImg1.src = latestRecipes1.images[0].src;
+latestRecipeImg1.src = latestRecipes1.content.rendered;
 const latestRecipeLink1 = document.getElementById("carousel__link2")
 latestRecipeLink1.href = "blog.html?recipeId=" + latestRecipes1.id
 
 const latestRecipeImg2 = document.getElementById("carousel__image3")
-latestRecipeImg2.src = latestRecipes2.images[0].src;
+latestRecipeImg2.src = latestRecipes2.content.rendered;
 const latestRecipeLink2 = document.getElementById("carousel__link3")
 latestRecipeLink2.href = "blog.html?recipeId=" + latestRecipes2.id
 
