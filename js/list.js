@@ -1,5 +1,5 @@
-import { api, keys } from "./keys.js"
-let response = await fetch(api + "/products?per_page=100&" + keys)
+import { api } from "./keys.js"
+let response = await fetch(api + "/products?per_page=100&")
 let recipes = await response.json()
 
 let html = ""
