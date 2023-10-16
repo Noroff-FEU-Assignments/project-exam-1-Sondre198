@@ -2,7 +2,7 @@ import { api } from "./keys.js"
 let recipes = await fetch(api + "/posts?per_page=100&").then(r=>r.json())
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = recipes.content.rendered;
+latestRecipeImg.src = recipe.content.rendered;
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
