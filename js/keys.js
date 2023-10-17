@@ -1,2 +1,2 @@
-export const keys="consumer_key=ck_459b2cdac335938cca9febcf70b16832176f7038&consumer_secret=cs_4054be385a362df493cccc68e4874b45bb952a98"
-export const api="https://tastetales.no/wp-json/wp/v2"
+export const keys="consumer_key=ck_7b87ed56c50632a25c8ae34c743d817835605a40&consumer_secret=cs_5eb35534f57fccd8dfb83b8ff4ca60fb8fedc2f0"
+export const api="https://tastetales.no/wp-json/wc/store"
