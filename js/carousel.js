@@ -6,7 +6,7 @@ let featuredRecipes = await fetch(api + "/posts?").then(r=>r.json())
 let latestRecipe = featuredRecipes[0]
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = latestRecipe.content.rendered
+latestRecipeImg.src = latestRecipe.content.rendered[3]
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
