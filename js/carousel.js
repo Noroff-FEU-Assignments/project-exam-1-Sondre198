@@ -1,5 +1,5 @@
 import { api } from "./keys.js"
-let recipes = await fetch(api + "/posts?per_page=100&").then(r=>r.json())
+let recipes = await fetch(api + "/posts?").then(r=>r.json())
 let latestRecipes0 = recipes[0]
 let latestRecipes1 = recipes[1]
 let latestRecipes2 = recipes[2]
