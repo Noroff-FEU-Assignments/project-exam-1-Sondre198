@@ -1,5 +1,5 @@
 import { api } from "./keys.js"
-let recipes = await fetch(api + "/posts?")
+let recipes = await fetch(api + "/posts?").then(r=>r.json())
 
 const latestRecipeImg = document.getElementById("carousel__image")
 latestRecipeImg.src = recipes.content.rendered[0]
