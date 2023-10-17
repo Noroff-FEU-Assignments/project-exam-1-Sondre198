@@ -1,22 +1,24 @@
-import { api } from "./keys.js"
-let recipes = await fetch(api + "/posts?").then(r=>r.json())
+import { api, keys } from "./keys.js"
+let recipes = await fetch(api + "/products?" + keys).then(r=>r.json())
 
+let featuredRecipes = await fetch(api + "/products?featured=true&" + keys).then(r => r.json())
+let latestRecipes0 = featuredRecipes[0]
+let latestRecipes1 = featuredRecipes[1]
+let latestRecipes2 = featuredRecipes[2]
 
-let featuredRecipes = await fetch(api + "/posts?").then(r=>r.json())
-let latestRecipe = featuredRecipes[0]
 
 const latestRecipeImg = document.getElementById("carousel__image")
-latestRecipeImg.src = latestRecipe.content.rendered[3]
+latestRecipeImg.src = latestRecipes0.images[0].src;
 const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
 const latestRecipeImg1 = document.getElementById("carousel__image2")
-latestRecipeImg1.src = recipes.content.rendered[1]
+latestRecipeImg1.src = latestRecipes1.images[0].src;
 const latestRecipeLink1 = document.getElementById("carousel__link2")
 latestRecipeLink1.href = "blog.html?recipeId=" + latestRecipes1.id
 
 const latestRecipeImg2 = document.getElementById("carousel__image3")
-latestRecipeImg2.src = recipes.content.rendered[2]
+latestRecipeImg2.src = latestRecipes2.images[0].src;
 const latestRecipeLink2 = document.getElementById("carousel__link3")
 latestRecipeLink2.href = "blog.html?recipeId=" + latestRecipes2.id
 
