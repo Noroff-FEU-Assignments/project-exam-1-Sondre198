@@ -1,8 +1,5 @@
 import { api } from "./keys.js"
-let recipes = await fetch(api + "/posts?").then(r=>r.json())
-let latestRecipes0 = recipes[0]
-let latestRecipes1 = recipes[1]
-let latestRecipes2 = recipes[2]
+let recipes = await fetch(api + "/posts?")
 
 const latestRecipeImg = document.getElementById("carousel__image")
 latestRecipeImg.src = recipes.content.rendered
@@ -10,12 +7,12 @@ const latestRecipeLink = document.getElementById("carousel__link")
 latestRecipeLink.href = "blog.html?recipeId=" + latestRecipes0.id
 
 const latestRecipeImg1 = document.getElementById("carousel__image2")
-latestRecipeImg1.src = latestRecipes1.content.rendered
+latestRecipeImg1.src = recipes.content.rendered
 const latestRecipeLink1 = document.getElementById("carousel__link2")
 latestRecipeLink1.href = "blog.html?recipeId=" + latestRecipes1.id
 
 const latestRecipeImg2 = document.getElementById("carousel__image3")
-latestRecipeImg2.src = latestRecipes2.content.rendered
+latestRecipeImg2.src = recipes.content.rendered
 const latestRecipeLink2 = document.getElementById("carousel__link3")
 latestRecipeLink2.href = "blog.html?recipeId=" + latestRecipes2.id
 
